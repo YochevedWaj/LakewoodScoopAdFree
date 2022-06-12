@@ -9,7 +9,6 @@ const Home = () => {
         const getPosts = async () => {
             const { data } = await axios.get('/api/tls/scrape');
             setPosts(data);
-            console.log(data)
         }
         getPosts();
     }, []);
@@ -17,7 +16,7 @@ const Home = () => {
     return (
         <div className='container mt-5'>
             <div className='row'>
-                <a href='https://www.thelakewoodscoop.com'>
+                <a href='https://www.thelakewoodscoop.com' target='_blank'>
                     <img src='https://www.thelakewoodscoop.com/news/wp-includes/images/thelakewoodscoop_logo.png' />
                 </a>
                 <h1>  Lakewood Scoop Ad Free!!!!</h1>
